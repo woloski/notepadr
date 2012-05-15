@@ -5,7 +5,7 @@ var fs = require('fs');
 var port = process.env.PORT || 8080;
 
 var app = express.createServer();
-var template = fs.readFileSync("./doc.html.mu", 'utf8');
+var template = fs.readFileSync(__dirname +"/doc.html.mu", 'utf8');
 
 app.get('/', function(req, res, next) {
 	res.writeHead(200);
