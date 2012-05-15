@@ -4,7 +4,7 @@
   </head>
 
   <body>
-  <h1>lito</h1>
+  <h1>matias</h1>
     <textarea id="editor" style="width: 100%;height: 100%"></textarea>
     <script src="/channel/bcsocket.js"></script>
     <script src="/share/share.uncompressed.js"></script>
