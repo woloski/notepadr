@@ -8,7 +8,9 @@ var app = express.createServer();
 var template = fs.readFileSync("doc.html.mu", 'utf8');
 
 app.get('/', function(req, res, next) {
-	res.redirect('/new');
+	res.writeHead(200);
+    res.end('<html><body>test</body></html>');
+	//res.redirect('/new');
 });
 
 app.get('/:docName', function(req, res, next) {
@@ -25,5 +27,5 @@ app.get('/:docName', function(req, res, next) {
     res.end(html);
 });
 
-share.server.attach(app, { db: { type: 'none' }, port: port });
+//share.server.attach(app, { db: { type: 'none' }, port: port });
 app.listen(port);
