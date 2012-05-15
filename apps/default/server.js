@@ -8,9 +8,7 @@ var app = express.createServer();
 var template = fs.readFileSync(__dirname +"/doc.html.mu", 'utf8');
 
 app.get('/', function(req, res, next) {
-	res.writeHead(200);
-    res.end('<html><body>tests</body></html>');
-	//res.redirect('/new');
+	res.redirect('/new');
 });
 
 app.get('/:docName', function(req, res, next) {
