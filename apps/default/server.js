@@ -9,11 +9,10 @@ var template = fs.readFileSync(__dirname +"/doc.html.mu", 'utf8');
 
 app.get('/', function(req, res, next) {
 	res.writeHead(200);
-    res.end('<html><body>test</body></html>');
+    res.end('<html><body>tests</body></html>');
 	//res.redirect('/new');
 });
 
-/*
 app.get('/:docName', function(req, res, next) {
     var docName = req.params.docName;
     var model = app.model;
@@ -27,6 +26,6 @@ app.get('/:docName', function(req, res, next) {
     res.writeHead(200);
     res.end(html);
 });
-*/
+
 share.server.attach(app, { db: { type: 'none' }, port: port });
 app.listen(port);
