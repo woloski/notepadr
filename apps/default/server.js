@@ -29,5 +29,5 @@ app.get('/:docName', function(req, res, next) {
     res.end(html);
 });
 */
-//share.server.attach(app, { db: { type: 'none' }, port: port });
+share.server.attach(app, { db: { type: 'none' }, port: port });
 app.listen(port);
