@@ -1,12 +1,11 @@
 var express = require('express')
 var share = require('share');
-/*
 var mustache = require('mustache');
-var fs = require('fs');*/
+var fs = require('fs');
 var port = process.env.PORT || 8080;
 
 var app = express.createServer();
-//var template = fs.readFileSync("doc.html.mu", 'utf8');
+var template = fs.readFileSync("doc.html.mu", 'utf8');
 
 app.get('/', function(req, res, next) {
 	res.writeHead(200);
