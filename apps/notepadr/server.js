@@ -4,7 +4,7 @@ var fs = require('fs');
 var share = require('share');
 var mustache = require('mustache');
 
-var doc = fs.readFileSync('doc.html', 'utf8');
+var doc = fs.readFileSync(__dirname + '/doc.html', 'utf8');
 
 var app = express.createServer();
 
