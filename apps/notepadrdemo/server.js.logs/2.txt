@@ -1,1 +1,0 @@
- new req/favicon.ico
